@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    background: radial-gradient(circle, rgba(255,157,88,1) 0%, rgba(239,124,43,1) 51%, rgba(223,93,0,1) 100%);
+    font-family:"JetBrains Mono", monospace;
+    height: 100vh;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+
+.card{
+    text-align: center;
+    width: 390px;
+    height: 600px;
+    background-color: #1E1E1E;
+    color:#FFFAFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+}
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+.location{
+    font-family: "Roboto Flex", sans-serif;
+    font-weight:600;
+    padding-bottom: 20px;
+    color: #fffaff80;
+    display: inline-block;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFAFF;
+    padding: 10px;
+    background-color: #FE6E07;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: block;
+    
+}
+.description {
+    font-size: small;
+    font-family:"Roboto Flex", sans-serif; ;
+    font-style: italic;
+    font-weight: 600;
+    background: linear-gradient(to right, #f28c38, #00ff00, #00b7eb); 
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+    display: inline-block;
+}
+
+.btn:hover{
+    &:hover {
+        transition: all 150ms linear;
+    
+        opacity: .85;
+      }
+      
+      &:active {
+        transition: all 150ms linear;
+        opacity: .75;
+      }
+      
+      &:focus {
+        outline: 1px dotted #e4e2e2ac;
+        outline-offset: -4px;
+      }
+}
